@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*++++++++++ Media Query +++++++++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	div.wrapper_01 { width: 100%; max-width: 1100px; margin: 0 auto; }
+	
+	section.sec_visual > h2.sub_title { background: url("../images/bg_menu.jpg") no-repeat center center; }
+
+	section.sec_pag { display: none; width: 100%; height: 32px; margin-top: 40px; text-align: center; }
+
+	select.mo { display: block; width: 73.9243%; height: 32px; margin: 40px 13.0378% 0 13.0378%; border: 1px solid #333; text-align: center; padding-left: 10px; background: #fff url("../images/ico_footer_arrow.png") no-repeat 97% center; font-size: 0.875em; -webkit-appearance: none;  -moz-appearance: none; appearance: none;}
+	
+	
+	section.sec_menu_01 { padding: 40px 0 0 0; width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 { padding: 0 10px; width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul { width: 100%;} 
+	section.sec_menu_01 > div.wrapper_01 > ul > li { width: 100%; margin: 0 0 45px 0; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li.li_p { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li.li_s { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li:nth-child(7) { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li:nth-child(8) { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li:nth-child(9) { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a { display: block; position: relative; width: 100%; height: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > img { width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > div { display: none; width: 100%; padding: 25% 25% 25% 25%; text-align: center; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > p.name { margin-top: 10px; font-size: 1.125em; color: #333; text-align: center; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > p.num { margin-top: 10px; font-size: 1em; color: #666; text-align: center;}
+
+	
+}
+
+
+/* -- mobile(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* 치킨 시작 */
+	div.wrapper_01 { width: 100%; max-width: 1100px; margin: 0 auto; }
+	
+	section.sec_visual > h2.sub_title { background: url("../images/bg_menu.jpg") no-repeat center center; }
+
+	section.sec_pag { display: inline-block; width: 100%; height: 40px; margin-top: 60px; border-bottom: 1px solid #ccc; text-align: center; }
+	section.sec_pag > a { width: 100%; padding: 7px 82px 15px 82px;  font-size: 1.125em; color: #999; }
+	section.sec_pag > a.active { padding-bottom: 10px; border-bottom: 3px solid #d4af37; color: #d4af37; }
+
+	select.mo { display: none; }
+	
+	section.sec_menu_01 { padding: 60px 0 15px 0; width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 { padding: 0 10px; width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul { width: 100%;} 
+	section.sec_menu_01 > div.wrapper_01 > ul > li { width: 31.5508%; float: left; margin: 0 2.6737% 45px 0; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li.li_p { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li.li_s { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li:nth-child(3n) { margin-right: 0px; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a { display: block; position: relative; width: 100%; height: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > img { max-width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > div { display: none; width: 100%; padding: 25% 25% 25% 25%; text-align: center; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > p.name { margin-top: 15px; font-size: 1.125em; color: #333; text-align: center; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > p.num { margin-top: 10px; font-size: 0.875em; color: #666; text-align: center;}
+
+	/* 치킨 끝 */
+
+}
+/* -- tablet(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+	div.wrapper_01 { width: 100%; max-width: 1100px; margin: 0 auto; }
+	
+	section.sec_visual > h2.sub_title { background: url("../images/bg_menu.jpg") no-repeat center center; }
+
+	section.sec_pag { display: inline-block; width: 100%; height: 50px; margin-top: 90px; border-bottom: 1px solid #ccc; text-align: center; }
+	section.sec_pag > a { width: 100%; padding: 10px 80px 20px 80px;  font-size: 1.25em; color: #999; }
+	section.sec_pag > a.active { width: 160px; padding-bottom: 19px; border-bottom: 3px solid #d4af37; color: #d4af37; }
+	section.sec_pag > a:hover { width: 160px; padding-bottom: 19px; border-bottom: 3px solid #d4af37; color: #d4af37; }
+
+	select.mo { display: none; }
+
+	section.sec_menu_01 { padding: 90px 0 20px 0; width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 { padding: 0 20px; width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul { width: 100%;} 
+	section.sec_menu_01 > div.wrapper_01 > ul > li { width: 32.0754%; float: left; margin: 0 1.8867% 70px 0; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li.li_p { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li.li_s { display: none; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li:nth-child(3n) { margin-right: 0px; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a { display: block; position: relative; width: 100%; height: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > img { max-width: 100%; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > div { display: none; width: 100%; padding: 25% 25% 25% 25%; text-align: center; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a:hover > div { display: block; position: absolute; left:0; top:0; width: 100%; height: 330px; background: #333; opacity: 50%; z-index: 11; }
+	
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > p.name { margin-top: 20px; font-size: 1.25em; color: #333; text-align: center; }
+	section.sec_menu_01 > div.wrapper_01 > ul > li > a > p.num { margin-top: 10px; font-size: 1em; color: #666; text-align: center;}
+	/* 치킨 끝 */
+}
+/* -- desktop(end) -- */

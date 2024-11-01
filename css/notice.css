@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* @mobile */
+@media screen and (max-width: 767px) {
+
+	section.notice > h2.sub_title { background: url("../images/bg_community.jpg") no-repeat center center; }
+	section.notice > div.inner_wrap { padding: 40px 10px; }
+	section.notice > div.inner_wrap > div.search { text-align: center; margin-bottom: 30px; }
+	section.notice > div.inner_wrap > div.search > input { width: 84.3333%; height: 34px; }
+	section.notice > div.inner_wrap > table { width: 100%; margin-bottom: 30px; color: #333; table-layout: fixed; }
+	section.notice > div.inner_wrap > table > caption { font-size: 0px; }
+	section.notice > div.inner_wrap > table > colgroup { display: none; }
+	section.notice > div.inner_wrap > table > thead { display: none; }
+	section.notice > div.inner_wrap > table > tbody > tr { display: block; width: 100%; height: auto; padding: 15px; border-bottom: 1px solid #ccc; }
+	section.notice > div.inner_wrap > table > tbody > tr:first-child { border-top: 3px solid #333; }
+	section.notice > div.inner_wrap > table > tbody > tr > td { display: block; font-size: 0.9375em; vertical-align: middle;  }
+	section.notice > div.inner_wrap > table > tbody > tr > td.num { display: none; }
+	section.notice > div.inner_wrap > table > tbody > tr > td.date { margin-top: 8px; color: #999; }
+	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+}/* -- @mobile (end) -- */
+
+/* @tablet (start) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.notice > h2.sub_title { background: url("../images/bg_community.jpg") no-repeat center center; }
+	section.notice > div.inner_wrap { padding: 60px 10px; }
+	section.notice > div.inner_wrap > div.search { text-align: center; margin-bottom: 30px; }
+	section.notice > div.inner_wrap > div.search > input { width: 40.107%; height: 34px; }
+	section.notice > div.inner_wrap > table { width: 100%; margin-bottom: 50px; color: #333; table-layout: fixed; }
+	section.notice > div.inner_wrap > table > caption { font-size: 0px; }
+	section.notice > div.inner_wrap > table tr { height: 50px; }
+	section.notice > div.inner_wrap > table th, td { font-size: 0.9375em; text-align: center; vertical-align: middle; }
+	section.notice > div.inner_wrap > table > thead { border-top: 3px solid #333; border-bottom: 1px solid #333; }
+	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
+	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 50px; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #d4af37; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #d4af37; }
+
+}/* -- @tablet (end) -- */
+
+/* @desktop (start) */
+@media screen and (min-width: 1025px) {
+
+	section.notice > h2.sub_title { background: url("../images/bg_community.jpg") no-repeat center center; }
+	section.notice > div.inner_wrap { padding: 90px 20px; }
+	section.notice > div.inner_wrap > div.search { text-align: right; margin-bottom: 30px; }
+	section.notice > div.inner_wrap > div.search > input { width: 27.2727%; height: 34px; }
+	section.notice > div.inner_wrap > table { width: 100%; margin-bottom: 50px; color: #333; table-layout: fixed; }
+	section.notice > div.inner_wrap > table > caption { font-size: 0px; }
+	section.notice > div.inner_wrap > table tr { height: 50px; }
+	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; }
+	section.notice > div.inner_wrap > table > thead { border-top: 3px solid #333; border-bottom: 1px solid #333; }
+	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
+	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 50px; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;  }
+	section.notice > div.inner_wrap > table > tbody > tr:hover > td { color: #d4af37; }
+	section.notice > div.inner_wrap > table > tbody > tr:hover > td > a { color: #d4af37;}
+	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #d4af37; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #d4af37; }
+
+}/* -- @desktop (end) -- */

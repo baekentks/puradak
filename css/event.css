@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* mobile */
+@media screen and (max-width: 767px) {
+
+    section.event > h2 { background: url("../images/bg_community.jpg") no-repeat center center; }
+    section.event > div.inner_wrap { padding: 40px 10px; }
+    section.event > div.inner_wrap > ul.li_event > li { width: 100%; margin-bottom: 50px; text-align: center; }
+    section.event > div.inner_wrap > ul.li_event > li > a { display: block; width: 100%; height: 100%; }
+	section.event > div.inner_wrap > ul.li_event > li:last-child { margin-bottom: 35px; }
+    section.event > div.inner_wrap > ul.li_event > li > a > div > img { display: block; width: 100%; height: auto; margin-bottom: 10px; }
+    section.event > div.inner_wrap > ul.li_event > li > a > p.title { margin-bottom: 3px; font-size: 0.9375em; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    section.event > div.inner_wrap > ul.li_event > li > a > p.date { font-size: 0.8125em; color: #666; }
+
+	/* 이벤트종료 - li class="end" */
+	section.event > div.inner_wrap > ul.li_event > li.end > a { pointer-events: none; }
+    section.event > div.inner_wrap > ul.li_event > li.end > a > div { position: relative; }
+	section.event > div.inner_wrap > ul.li_event > li.end > a > div::before { content: ""; position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: rgba(25, 25, 25, 0.7);}
+	section.event > div.inner_wrap > ul.li_event > li.end > a > div::after { content: "이벤트\a종료"; position: absolute; left: 50%; top: 50%; display: block; width: 100px; height: 100px; padding-top: 25px; border: 3px solid #fff; border-radius: 50%; font-size: 1.125em; color: #fff; text-align: center; line-height: 1.3; white-space: pre; transform: translate(-50%, -50%); }
+
+	/* 이벤트팝업 */
+	.popup { display: none; position: fixed; left: 0; top: 0; z-index: 100; overflow-y: scroll; width: 100%; height: 100vh; background: rgba(204, 204, 204, 0.7); padding: 50px 0; }
+	.popup div.pop_inner_wrap { width: 90%; margin: 0 auto; }
+	.popup > .popup_title { position: relative; left: 0; top: 0; z-index: 100; width: 100%; height: 40px;  }
+	.popup > .popup_title > div.pop_inner_wrap { background: #fff; border-bottom: 1px solid #bbb; }
+	.popup > .popup_title > div.pop_inner_wrap > p.title { float: left; width: 80%; padding-left: 10px; font-size: 0.875em; line-height: 40px; overflow: hidden;  white-space: nowrap; text-overflow: ellipsis; }
+	.popup > .popup_title > div.pop_inner_wrap > button.close { float: right; width: 40px; height: 40px; background: #666 url("../images/btn_p_close.png") no-repeat center center; background-size: 70%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	.popup > .popup_banner { position: relative; left: 0; top: 0; }
+	.popup > .popup_banner > div.pop_inner_wrap > img { display: block; width: 100%; margin: 0 auto; }
+
+}/* -- mobile (end) -- */
+
+/* tablet (start) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    section.event > h2 { background: url("../images/bg_community.jpg") no-repeat center center; }
+    section.event > div.inner_wrap { padding: 60px 0; }
+    section.event > div.inner_wrap > ul.li_event > li { float: left; width: 47.3958%; margin: 0 1.302% 50px 1.302%; text-align: center; }
+    section.event > div.inner_wrap > ul.li_event > li > a { display: block; width: 100%; height: 100%; }
+    section.event > div.inner_wrap > ul.li_event > li > a > div > img { display: block; width: 100%; height: auto; margin-bottom: 15px; }
+    section.event > div.inner_wrap > ul.li_event > li > a > p.title { margin-bottom: 3px; font-size: 1em; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    section.event > div.inner_wrap > ul.li_event > li > a > p.date { font-size: 0.875em; color: #666; }
+
+	/* 이벤트종료 - li class="end" */
+	section.event > div.inner_wrap > ul.li_event > li.end > a { pointer-events: none; }
+    section.event > div.inner_wrap > ul.li_event > li.end > a > div { position: relative; }
+	section.event > div.inner_wrap > ul.li_event > li.end > a > div::before { content: ""; position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: rgba(25, 25, 25, 0.7);}
+	section.event > div.inner_wrap > ul.li_event > li.end > a > div::after { content: "이벤트\a종료"; position: absolute; left: 50%; top: 50%; display: block; width: 130px; height: 130px; padding-top: 35px; border: 3px solid #fff; border-radius: 50%; font-size: 1.375em; color: #fff; text-align: center; line-height: 1.3; white-space: pre; transform: translate(-50%, -50%); }
+
+	/* 이벤트팝업 */
+	.popup { display: none; position: fixed; left: 0; top: 0; z-index: 100; overflow-y: scroll; width: 100%; height: 100vh; background: rgba(204, 204, 204, 0.7); padding: 50px 0; }
+	.popup div.pop_inner_wrap { width: 80%; margin: 0 auto; }
+	.popup > .popup_title { position: relative; left: 0; top: 0; z-index: 100; width: 100%; height: 60px; }
+	.popup > .popup_title > div.pop_inner_wrap { background: #fff; border-bottom: 1px solid #bbb; }
+	.popup > .popup_title > div.pop_inner_wrap > p.title { float: left; width: 85%; padding-left: 10px; font-size: 1em; line-height: 60px;  }
+	.popup > .popup_title > div.pop_inner_wrap > button.close { float: right; width: 60px; height: 60px; background: #666 url("../images/btn_p_close.png") no-repeat center center; background-size: 70%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	.popup > .popup_banner { position: relative; left: 0; top: 0; }
+	.popup > .popup_banner > div.pop_inner_wrap > img { display: block; width: 100%; margin: 0 auto; }
+
+}/* -- tablet (end) -- */
+
+/* desktop (start) */
+@media screen and (min-width: 1025px) {
+
+    section.event > h2 { background: url("../images/bg_community.jpg") no-repeat center center; }
+    section.event > div.inner_wrap { padding: 90px 10px; }
+    section.event > div.inner_wrap > ul.li_event > li { float: left; width: 47.2727%; margin: 0 0.909% 70px 0.909%; text-align: center; }
+    section.event > div.inner_wrap > ul.li_event > li > a { display: block; width: 100%; height: 100%; }
+    section.event > div.inner_wrap > ul.li_event > li > a > div > img { display: block; width: 100%; height: auto; margin-bottom: 20px; }
+    section.event > div.inner_wrap > ul.li_event > li > a > p.title { margin-bottom: 3px; font-size: 1.25em; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    section.event > div.inner_wrap > ul.li_event > li > a > p.date { color: #666666; }
+	section.event > div.inner_wrap > ul.li_event > li.cur > a:hover > p.title { text-decoration: underline; }
+
+	/* 이벤트종료 - li class="end" */
+	section.event > div.inner_wrap > ul.li_event > li.end > a { pointer-events: none; cursor: default; }
+    section.event > div.inner_wrap > ul.li_event > li.end > a > div { position: relative; }
+	section.event > div.inner_wrap > ul.li_event > li.end > a > div::before { content: ""; position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: rgba(25, 25, 25, 0.7);}
+	section.event > div.inner_wrap > ul.li_event > li.end > a > div::after { content: "이벤트\a종료"; position: absolute; left: 50%; top: 50%; display: block; width: 150px; height: 150px; padding-top: 40px; border: 3px solid #fff; border-radius: 50%; font-size: 1.5625em; color: #fff; text-align: center; line-height: 1.3; white-space: pre; transform: translate(-50%, -50%); }
+
+	/* 이벤트팝업 */
+	.popup { display: none; position: fixed; left: 0; top: 0; z-index: 100; overflow-y: scroll; width: 100%; height: 100vh; background: rgba(204, 204, 204, 0.7); padding: 50px 0; }
+	.popup::-webkit-scrollbar { display: none; }
+	.popup div.pop_inner_wrap { width: 640px; margin: 0 auto; }
+	.popup > .popup_title { position: relative; left: 0; top: 0; z-index: 100; width: 100%; height: 60px; }
+	.popup > .popup_title > div.pop_inner_wrap { background: #fff; border-bottom: 1px solid #bbb; }
+	.popup > .popup_title > div.pop_inner_wrap > p.title { float: left; width: 85%; padding-left: 10px; font-size: 1.125em; line-height: 60px; }
+	.popup > .popup_title > div.pop_inner_wrap > button.close { float: right; width: 60px; height: 60px; background: #666 url("../images/btn_p_close.png") no-repeat center center; background-size: 70%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	.popup > .popup_banner { position: relative; left: 0; top: 0; }
+	.popup > .popup_banner > div.pop_inner_wrap > img { display: block; margin: 0 auto; }
+
+}/* -- desktop (end) -- */

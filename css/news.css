@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*++++++++++ Media Query +++++++++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	section.sec_visual > h2.sub_title { background: url("../images/bg_brand.jpg") no-repeat center center; }
+	
+	section.sec_visual > div.inner_wrap { padding: 40px 10px 40px 10px; }
+	section.sec_visual > div.inner_wrap > div.search { text-align: center; margin-bottom: 40px; }
+	section.sec_visual > div.inner_wrap > div.search > input { width: 84.349%; height: 32px; }
+
+	section.sec_mainnews { width: 100%; height: 450px; overflow: hidden; position: relative; margin-bottom: 40px; }
+	section.sec_mainnews > div.inner_wrap > div.slides { overflow: hidden; position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; opacity: 0; animation-name: fade_in_up; animation-duration: 1.5s; animation-itreration-count:1; }
+	@keyframes fade_in_up
+{
+	0% {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+	
+	section.sec_mainnews > div.inner_wrap > div.slides > div.img { width: 100%; height: 50%; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.img > a > img { width: 100%; height: 100%; object-fit: cover; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info { width: 100%; text-align: center; }
+
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.title { width: 100%;  display: inline-block; margin: 20px 0 35px 0; padding: 0 10% 0 10%; font-size: 1.0625em; color: #333; line-height: 1.2; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.title_02 { margin: 32px 0 44px 0; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.title_03 { margin: 32px 0 44px 0; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.desc { width: 100%; height: 2.3em; overflow: hidden; margin-bottom: 20px; padding: 0 4% 0 4%; font-size: 0.9375em; color: #666; line-height: 1.2; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.desc > br { display: none; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.date {width: 100%;  font-size: 0.8125em; color: #666; }
+
+	section.sec_mainnews > div.inner_wrap > p.pagination { width: 100%; height: 15px; position: absolute; left: 0; bottom: 5px; z-index: 20; text-align: center; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button { display: inline-block; margin: 0 10px 20px 10px; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button > span { display: block; width: 10px; height: 10px; background: #bbb; border-radius: 50%; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button.active > span { background: #333; }
+	section.sec_mainnews > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 30px; height: 100%; }
+	section.sec_mainnews > div.inner_wrap > button.prev { left: 0; top:7%; background: url("../images/btn_prev.png") no-repeat right 55%; text-indent: -99999em; }
+	section.sec_mainnews > div.inner_wrap > button.next { right: 0; top:7%; background: url("../images/btn_next.png") no-repeat left 55%; text-indent: 99999em; }
+
+	section.sec_news > div.inner_wrap { padding-bottom: 20px; }
+	section.sec_news > div.inner_wrap > div.n_all { text-align: center;  display: inline-block; width:48%; height: auto; margin-left: 2.6%; margin-bottom: 20px; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p > a { display:block; width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p > a > img { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_1 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_3 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_5 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_7 { display: none; }
+	section.sec_news > div.inner_wrap > div.n_8 { display: none; }
+	section.sec_news > div.inner_wrap > div.n_9 { display: none; }
+
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > div.n_info > p.subject { overflow: hidden;  white-space: nowrap; text-overflow: ellipsis;  margin-top: 10px; font-size: 0.875em; color: #333; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > div.n_info > p.date { margin-top: 10px; font-size: 0.75em; color: #666; }
+
+	div.popup { display: none; position: fixed; left: 0; top: 0; z-index: 100; overflow-y: scroll; width: 100%; height: 100vh; background: rgba(204, 204, 204, 0.7); padding-bottom: 50px; padding: 50px 0;}
+	div.popup div.pop_inner_wrap { width: 94.448%; margin: 0 auto; }
+
+	div.popup > div.popup_title { position: relative; left: 0; top: 0; z-index: 100; width: 100%; height: 80px; }
+	div.popup > div.popup_title > div.pop_inner_wrap { background: #fff; height: 80px; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.view_title { width:100%; height: 40px; font-size: 0.875em; color: #333; text-align: left; padding: 7px 0 7px 10px; border-bottom: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.view_title > p { overflow: hidden;  white-space: nowrap; text-overflow: ellipsis; }
+
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title { display: inline-block; text-align: center; width:100%; height: 40px; font-size: 0.75em; color: #bbb; border-bottom: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > p.date { float: left;  width: 25%; padding: 10px 0 10px 0; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > a.p_fb { float: left; width: 25%; height: 100%; background: url("../images/btn_p_facebook.png") no-repeat center center; background-size: 40%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > a.p_is { float: left; width: 25%; height: 100%; background: url("../images/btn_p_instagram.png") no-repeat center center; background-size: 40%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > button.close { float: right; width: 25%; height: 100%; background: #666 url("../images/btn_p_close.png") no-repeat center center; background-size: 30%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+
+	div.popup > div.c_p_con { position: relative; left: 0; top: 0; }
+	div.popup > div.c_p_con > div.pop_inner_wrap { background: #fff; padding: 30px 15px 30px 15px; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > p.p_head { text-align: center; width: 100%; margin-bottom: 30px; font-size: 0.875em; color: #333; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > div { text-align: center; width: 100%; margin-bottom: 30px; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > div > img { width: 100%; height: auto; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > p.p_body { text-align: left; width: 100%; font-size: 0.8125em; color: #333; white-space: pre-line; }
+
+
+}
+
+
+/* -- mobile(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.sec_visual > h2.sub_title { background: url("../images/bg_brand.jpg") no-repeat center center; }
+	
+	section.sec_visual > div.inner_wrap { padding: 60px 10px 60px 10px; }
+	section.sec_visual > div.inner_wrap > div.search { text-align: center; margin-bottom: 60px; }
+	section.sec_visual > div.inner_wrap > div.search > input { width: 39.0625%; height: 32px; }
+
+	section.sec_mainnews { width: 100%; overflow: hidden; position: relative; height: 250px; margin-bottom: 60px; }
+	section.sec_mainnews > div.inner_wrap > div.slides { overflow: hidden; position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+
+	
+	section.sec_mainnews > div.inner_wrap > div.slides > div.img { float: left;  width: 50%; height: 100%; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.img > a > img { width: 100%; height: 100%; object-fit: cover; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info { float: right; width: 50%; height: 100%; text-align: center; animation-name: fade_in_up; animation-duration: 1.5s; animation-itreration-count:1; }
+	@keyframes fade_in_up
+{
+	0% {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+	br { display: none; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.title {width: 100%; height: 88px; display: inline-block; margin: 10px 0 10px 0; padding: 0 8% 0 8%; font-size: 1.375em; color: #333; line-height: 1.1; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.desc { overflow: hidden; width: 100%; height: 70px; margin-bottom: 20px; padding: 0 10% 0 10%; font-size: 0.9375em; color: #666; line-height: 1.2;  }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.date {width: 100%; height: 20px; font-size: 0.8125em; color: #666; }
+
+	section.sec_mainnews > div.inner_wrap > p.pagination { width: 50%; height: 15px; position: absolute; left: 50%; bottom: 0; z-index: 20; text-align: center; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button { display: inline-block; margin: 0 10px 20px 10px; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button > span { display: block; width: 10px; height: 10px; background: #bbb; border-radius: 50%; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button.active > span { background: #333; }
+	section.sec_mainnews > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 30px; height: 100%; }
+	section.sec_mainnews > div.inner_wrap > button.prev { left: 50%; background: url("../images/btn_prev.png") no-repeat right 55%; text-indent: -99999em; }
+	section.sec_mainnews > div.inner_wrap > button.next { right: 0; background: url("../images/btn_next.png") no-repeat left 55%; text-indent: 99999em; }
+
+	section.sec_news > div.inner_wrap { padding-bottom: 40px; }
+	section.sec_news > div.inner_wrap > div.n_all { text-align: center;  display: inline-block; width:31.25%; height: auto; margin-left: 2.6%; margin-bottom: 40px; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p > a { display:block; width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p > a > img { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_1 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_4 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_7 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > div.n_info > p.subject { overflow: hidden;  white-space: nowrap; text-overflow: ellipsis;  margin-top: 20px; font-size: 0.9375em; color: #333; }
+	
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > div.n_info > p.date { margin-top: 20px; font-size: 0.8125em; color: #666; }
+
+	div.popup { display: none; position: fixed; left: 0; top: 0; z-index: 100; overflow-y: scroll; width: 100%; height: 100vh; background: rgba(204, 204, 204, 0.7); padding-bottom: 50px; padding: 50px 0; }
+	div.popup div.pop_inner_wrap { width: 98%; margin: 0 auto; }
+
+	div.popup > div.popup_title { position: relative; left: 0; top: 0; z-index: 100; width: 100%; height: 80px; }
+	div.popup > div.popup_title > div.pop_inner_wrap { background: #fff;  height: 80px; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.view_title { width:100%; height: 40px; font-size: 0.9375em; color: #333; text-align: left; padding: 7px 0 7px 10px; border-bottom: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.view_title > p { overflow: hidden;  white-space: nowrap; text-overflow: ellipsis; }
+
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title {display: inline-block; text-align: center; width:100%; height: 40px; font-size: 0.8125em; color: #bbb; border-bottom: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > p.date { float: left;  width: 25%; padding: 10px; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > a.p_fb { float: left; width: 25%; height: 100%; background: url("../images/btn_p_facebook.png") no-repeat center center; background-size: 20%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > a.p_is { float: left; width: 25%; height: 100%; background: url("../images/btn_p_instagram.png") no-repeat center center; background-size: 20%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > button.close { float: right; width: 25%; height: 100%; background: #666 url("../images/btn_p_close.png") no-repeat center center; background-size: 15%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+
+	div.popup > div.c_p_con { position: relative; left: 0; top: 0; }
+	div.popup > div.c_p_con > div.pop_inner_wrap { background: #fff; padding: 30px 54px 30px 54px; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > p.p_head { text-align: center; width: 100%; margin-bottom: 30px; font-size: 0.9375em; color: #333; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > div { text-align: center; width: 100%; margin-bottom: 30px; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > div > img { width: 100%; height: auto; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > p.p_body { text-align: left; width: 100%; font-size: 0.875em; color: #333; white-space: pre-line; }
+
+}
+/* -- tablet(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+	
+	section.sec_visual > h2.sub_title { background: url("../images/bg_brand.jpg") no-repeat center center; }
+	
+	section.sec_visual > div.inner_wrap { padding: 90px 20px 90px 20px; }
+	section.sec_visual > div.inner_wrap > div.search { text-align: right; margin-bottom: 90px; }
+	section.sec_visual > div.inner_wrap > div.search > input { width: 27.2727%; height: 34px; }
+
+	section.sec_mainnews { width: 100%; overflow: hidden; position: relative; height: 355px; margin-bottom: 90px; }
+	section.sec_mainnews > div.inner_wrap > div.slides { overflow: hidden; position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+	section.sec_mainnews > div.inner_wrap > div.cur { z-index: 1; /*transform: translateX(100%);*/ }
+	section.sec_mainnews > div.inner_wrap > div.next { z-index: 5; transform: translateX(-100%); }
+	section.sec_mainnews > div.inner_wrap > div.prev { z-index: 8; transform: translateX(100%); }
+	
+	section.sec_mainnews > div.inner_wrap > div.slides > div.img { float: left;  width: 50%; height: 100%; }
+	
+	section.sec_mainnews > div.inner_wrap > div.slides > div.img > a > img { width: 100%; height: 100%; object-fit: cover; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info { float: right; width: 50%; height: 100%; text-align: center; animation-name: fade_in_up; animation-duration: 1.5s; animation-itreration-count:1; }
+	@keyframes fade_in_up
+{
+	0% {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.title { width: 100%; height: 117px; display: inline-block; margin: 20px 0 20px 0; padding: 0 4.1666% 0 4.1666%; font-size: 1.875em; color: #333; line-height: 1.2; }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.desc { overflow: hidden; width: 100%; height: 113px; margin-bottom: 20px; padding: 0 6% 0 6%; font-size: 1.125em; color: #666; line-height: 1.3;  }
+	section.sec_mainnews > div.inner_wrap > div.slides > div.info > p.date {width: 100%;  font-size: 1em; color: #666; }
+	
+	section.sec_mainnews > div.inner_wrap > p.pagination { position: absolute; left:50%; bottom: 0; z-index: 20; width: 50%; height: 20px; text-align: center; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button { display: inline-block; margin: 0 10px 20px 10px; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button > span { display: block; width: 13px; height: 13px; background: #bbb; border-radius: 50%; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	section.sec_mainnews > div.inner_wrap > p.pagination > button.active > span { background: #333; }
+	section.sec_mainnews > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 30px; height: 100%; }
+	section.sec_mainnews > div.inner_wrap > button.prev { left: 50%; background: url("../images/btn_prev.png") no-repeat right 55%; text-indent: -99999em; }
+	section.sec_mainnews > div.inner_wrap > button.next { right: 0; background: url("../images/btn_next.png") no-repeat left 55%; text-indent: 99999em; }
+
+	section.sec_news > div.inner_wrap { padding-bottom: 40px; }
+	section.sec_news > div.inner_wrap > div.n_all { text-align: center;  display: inline-block; width:32.076%; height: auto; margin-left: 1.5%; margin-bottom: 50px; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p { width: 100%; transition: all 0.3s; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p > a { display:block; width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > p.n_p > a > img { width: 100%; }
+	section.sec_news > div.inner_wrap > div.n_1 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_4 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_7 { margin-left: 0px; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > div.n_info > p.subject { overflow: hidden;  white-space: nowrap; text-overflow: ellipsis;  margin-top: 20px; font-size: 1.125em; color: #333; }
+	section.sec_news > div.inner_wrap > div.n_all > div.n_in > div.n_info > p.date { margin-top: 20px; font-size: 1em; color: #666; }
+	div.pagination { transition: all 0.3s; }
+
+	div.popup { display: none; position: fixed; left: 0; top: 0; z-index: 100; overflow-y: scroll; width: 100%; height: 100vh; background: rgba(204, 204, 204, 0.7); padding: 50px 0; }
+	.popup::-webkit-scrollbar { display: none; }
+	div.popup div.pop_inner_wrap { width: 100%; max-width: 1100px; margin: 0 auto; }
+	div.popup > div.popup_title { position: relative; left: 0; top: 0; z-index: 100; width: 100%; height: 60px; }
+	div.popup > div.popup_title > div.pop_inner_wrap { background: #fff; border-bottom: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.view_title { float:left; width:67.108%; height: 60px; border-right: 1px solid #bbb; font-size: 1.125em; color: #333; text-align: left; padding: 15px 0 15px 10px; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.view_title > p { overflow: hidden;  white-space: nowrap; text-overflow: ellipsis; }
+
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title {display: inline-block; float: right; text-align: center; width:32.892%; height: 60px; font-size: 1em; color: #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > p.date { float: left; padding: 5.2% 0 5.2% 0; width: 40%; height: 60px; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > a.p_fb { float: left; width: 20%; height: 100%; background: url("../images/btn_p_facebook.png") no-repeat center center; background-size: 70%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > a.p_is { float: left; width: 20%; height: 100%; background: url("../images/btn_p_instagram.png") no-repeat center center; background-size: 70%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+	div.popup > div.popup_title > div.pop_inner_wrap > div.r_title > button.close { float: right; width: 20%; height: 100%; background: #666 url("../images/btn_p_close.png") no-repeat center center; background-size: 60%; text-indent: 100%; white-space: nowrap; overflow: hidden; border-left: 1px solid #bbb; }
+
+	div.popup > div.c_p_con { position: relative; left: 0; top: 0; }
+	div.popup > div.c_p_con > div.pop_inner_wrap { background: #fff; padding: 40px 70px 40px 70px; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > p.p_head { text-align: center; width: 100%; margin-bottom: 40px; font-size: 1.125em; color: #333; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > div { text-align: center; width: 100%; margin-bottom: 40px; }
+	div.popup > div.c_p_con > div.pop_inner_wrap > p.p_body { text-align: left; width: 100%; font-size: 1em; color: #333; white-space: pre-line; }
+
+}
+/* -- desktop(end) -- */

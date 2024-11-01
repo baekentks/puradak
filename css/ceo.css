@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*++++++++++ Media Query +++++++++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	section.sec_visual > h2.sub_title { background: url("../images/bg_brand.jpg") no-repeat center center; }
+	
+	section.sec_visual > div.inner_wrap { padding: 40px 10px 0px 10px; }
+	section.sec_visual > div.inner_wrap > div.ceo > img { width: 100%; height: auto; } 
+	section.sec_visual > div.inner_wrap > div.ceotext { padding-top: 40px; padding-bottom: 50px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul { font-size: 0.75em; line-height: 1; color: #666; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li { width: 100%; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r { width: 100%; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_4 { text-align: right; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_4 > strong { margin-left: 10px;  font-size: 1.0625em; color: #000; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li > p { margin-bottom: 30px;  } 
+
+}
+
+
+/* -- mobile(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.sec_visual > h2.sub_title { background: url("../images/bg_brand.jpg") no-repeat center center; }
+	
+	section.sec_visual > div.inner_wrap { padding: 60px 10px 0px 10px; }
+	section.sec_visual > div.inner_wrap > div.ceo > img { width: 100%; height: auto; } 
+	section.sec_visual > div.inner_wrap > div.ceotext { padding-top: 60px; padding-bottom: 70px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul { font-size: 0.9375em; line-height: 1.2; color: #666; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li { width: 48.664%; float: left; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.l { margin-right: 20px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r {  float: right; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_1 { margin-bottom: 85px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_2 { margin-bottom: 70px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_3 { margin-bottom: 95px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_4 { text-align: right; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_4 > strong { margin-left: 10px;  font-size: 1.0625em; color: #000; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li > p { margin-bottom: 50px; } 
+
+}
+/* -- tablet(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+	
+	section.sec_visual > h2.sub_title { background: url("../images/bg_brand.jpg") no-repeat center center; }
+	
+	section.sec_visual > div.inner_wrap { padding: 90px 20px 0px 20px; }
+	section.sec_visual > div.inner_wrap > div.ceo > img { width: 100%; height: auto; } 
+	section.sec_visual > div.inner_wrap > div.ceotext { padding-top: 90px; padding-bottom: 40px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul { font-size: 1.125em; line-height: 1.3; color: #666; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li { width: calc(50% - 45px); float: left; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.l { margin-right: 90px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r {  float: right; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_1 { margin-bottom: 95px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_2 { margin-bottom: 75px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_3 { margin-bottom: 110px; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_4 { text-align: right; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li.r > p.r_4 > strong { margin-left: 10px; font-family: "NotoSansKR-Bold"; font-size: 1.25em; color: #000; }
+	section.sec_visual > div.inner_wrap > div.ceotext > ul > li > p { margin-bottom: 50px; transition: all 0.3s; } 
+	
+}
+/* -- desktop(end) -- */

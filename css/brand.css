@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*++++++++  Media Query  ++++++++*/
+/*------- Mobile(start)  -----*/
+@media screen and (max-width: 767px) {
+
+	* { color: #666;  font-family: 'NotoSansKR-Medium'; }
+	section.sec_brand {  position: relative;  width: 100%; height: auto;  text-align: center; }
+	section.sec_brand > h2.sub_title {  margin-bottom: 40px; background: url("../images/bg_brand.jpg")no-repeat center center;  }
+
+	section.sec_brand > h1 { font-size:1.875em; font-weight: bold; color: #333; }
+
+	section.sec_brand > p { font-size: 0.75em;  }
+	section.sec_brand > img.idus {  width: 108px; height: 125px; object-fit: cover; margin-top:60px; }
+	section.sec_brand > div::after { content:""; width: 1px; height: 40px; background: #666; position: absolute; left: 50%; margin-top: 20px; }
+	section.sec_brand > p.black { margin-top: 80px; color: #333; margin-bottom: 20px; font-weight: bold;}
+	section.sec_brand > p.gold { font-size: 1.25em; color: #d4af37; }
+	section.sec_brand > p.big { font-size: 1.25em; color: #d4af37; font-weight: bold;  margin-bottom: 40px; }
+	section.sec_brand > p > span { color: #333; }
+	section.sec_brand > p.ra_01 { margin-bottom: 20px; }
+	section.sec_brand > p.ra_02 { margin-bottom: 30px; }
+	section.sec_brand > p.ra_03 { margin-bottom: 30px; }
+	section.sec_brand > p.ra_04 { margin-bottom: 60px; }
+	section.sec_brand > img.chicken { width: 242px; height: 177px; object-fit: cover; margin-bottom: 40px; }
+}
+/*---------   Mobile(end)   ----*/
+
+/*++++++++++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++++++++++++*/
+/*-------   Tablet(start)   -----*/
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+
+ * { color: #666;  font-family: 'NotoSansKR-Medium'; }
+	section.sec_brand {  position: relative;  width: 100%; height: auto;  text-align: center; }
+	section.sec_brand > h2.sub_title { margin-bottom: 120px; background: url("../images/bg_brand.jpg")no-repeat center center;  }
+
+	section.sec_brand > h1 {  font-size: 2.25em; font-weight: bold;   color: #333; }
+
+	section.sec_brand > p { font-size: 1em;  }
+	section.sec_brand > img.idus {  width: 108px; height: 125px; object-fit: cover; margin-top:60px; }
+	section.sec_brand > div::after { content:""; width: 1px; height: 75px; background: #666; position: absolute; left: 50%; margin-top: 30px; }
+	section.sec_brand > p.black { margin-top: 130px; color: #333; margin-bottom: 30px; font-weight: bold;}
+	section.sec_brand > p.gold { font-size: 1.5625em; color: #d4af37; font-weight: bold;}
+	section.sec_brand > p.big { font-size: 1.875em; color: #d4af37; font-weight: bold;  margin-bottom: 60px; }
+	section.sec_brand > p > span { color: #333; }
+	section.sec_brand > p.ra_01 { margin-bottom: 20px; }
+	section.sec_brand > p.ra_02 { margin-bottom: 30px; }
+	section.sec_brand > p.ra_03 { margin-bottom: 30px; }
+	section.sec_brand > p.ra_04 { margin-bottom: 60px; }
+	section.sec_brand > img.chicken { width: 425px; height: 310px; object-fit: cover; margin-bottom: 120px; }
+}
+/*---------   Tablet(end)   ----*/
+
+/*++++++++++++++++++++++++++++++++*/
+/*-------   Desktop(start)   -----*/
+@media screen and (min-width: 1025px) {
+
+
+
+
+	* { color: #666;  font-family: 'NotoSansKR-Medium'; }
+	section.sec_brand {  position: relative;  width: 100vw; height: auto;  text-align: center; }
+	section.sec_brand > h2.sub_title { margin-bottom: 180px; background: url("../images/bg_brand.jpg")no-repeat center center;  }
+
+	section.sec_brand > h1 { font-size: 3.125em; font-weight: bold; color: #333; }
+
+	section.sec_brand > p { font-size: 1.125em; opacity: 0; }
+	section.sec_brand > img.idus { margin-top:90px;}
+	section.sec_brand > div::after { content:""; width: 1px; height: 103px; background: #666; position: absolute; left: 50%; margin: 50px 0; }
+	section.sec_brand > p.black { margin-top: 200px; color: #333; margin-bottom: 30px; font-weight: bold; }
+	section.sec_brand > p.gold { font-size: 1.875em; color: #d4af37; font-weight: bold;}
+	section.sec_brand > p.big { font-size: 2.25em; color: #d4af37; font-weight: bold;  margin-bottom: 90px; }
+	section.sec_brand > p > span { color: #333; }
+	section.sec_brand > p.ra_01 { margin-bottom: 30px; }
+	section.sec_brand > p.ra_02 { margin-bottom: 50px; }
+	section.sec_brand > p.ra_03 { margin-bottom: 50px; }
+	section.sec_brand > p.ra_04 { margin-bottom: 90px; }
+	section.sec_brand > img.chicken { width: 554px; height: 404px; object-fit: cover; margin-bottom: 180px; opacity: 0;}
+
+
+
+	
+}
+/*--------   Desktop(end)   -----*/

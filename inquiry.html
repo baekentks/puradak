@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>푸라닭 치킨</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/inquiry.css" type="text/css">
+	<!-- [IF lt	IE 9]
+		<script src="js/html5shiv.js"></script>
+	<!--[endif]-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/inquiry.js"></script>
+</head>
+	
+<body>
+
+	<header>
+		<div class="inner_wrap clearfix">
+			<h1><a href="index.html">PURADAK</a></h1>
+			<nav class="clearfix">
+				<div class="login"><a href="#">login</a>/<a href="#">Join us</a></div>
+				<div class="social">
+						<a href="#">face book</a><!--
+					 --><a href="#">instargram</a><!--
+					 --><a href="#">youtube</a>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<a href="#">Menu</a>
+						<ul>
+							<li><a href="menu.html?li_c">치킨</a></li>
+							<li><a href="menu.html?li_p">피자</a></li>
+							<li><a href="menu.html?li_s">사이드</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Brand</a>
+						<ul>
+							<li><a href="brand.html">푸라닭스토리</a></li>
+							<li><a href="ceo.html">CEO소개</a></li>
+							<li><a href="news.html">언론보도</a></li>
+							<li><a href="history.html">연혁</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Store</a>
+						<ul>
+							<li><a href="store.html">매장찾기</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Franchise</a>
+						<ul>
+							<li><a href="information.html">가맹안내</a></li>
+							<li><a href="inquiry.html">가맹문의</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Community</a>
+						<ul>
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="event.html">이벤트</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<button class="btn_back">back</button>
+			<button class="btn_menu_toggle">menu</button>
+		</div>
+	</header>
+
+	<section class="sec_visual">
+		<h2 class="sub_title">가맹문의</h2>
+	</section>
+
+	<section class="sec_a">
+		<div class="inner_wrap">
+			<h2>개인정보 취급방침</h2>
+			<ul>
+				<li>
+					<p>서비스를 이용하는 사용자에게 최적의 서비스를 제공하기 위한 목적으로 아래와 같은 개인정보를 수집하고 있으며 수집 방법은 아래와 같습니다.<br>수집하는 개인정보 항목 및 수집 방법<br>(1) 수집하는 개인정보 항목 : 이름, 휴대폰, 이메일<br>(2) 개인정보 수집방법 : 홈페이지(창업문의, 업무제휴)개인정보의 수집 및 이용목적<br>(1) 회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>서비스 이용에 따른 문의사항 , 불만 처리, A/S요청 등 원활한 의사소통 경로의 확보<br><br>개인정보의 보유 및 이용기간<br>원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.<br>단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br>(1) 보존 항목 : 이름, 휴대폰, 이메일<br>(2) 보존 근거 : 서비스 이용의 혼선 방지 및 불법사용자에 대한 수사협조<br>(3) 보존 기간 : 1년<br>개인정보 관리 책임자<br>-이 름 : 000<br>-직 급 : 대리<br>-전 화 :010-0000-0000<br>-이메일 : syumi@naver.com</p>
+				</li>
+					<p class="checkbox clearfix">
+						<label><input class="accept" type="checkbox"/>약관에 동의합니다.</label>
+					</p>
+			</ul>
+				
+		</div>
+	</section>
+
+	<section class="sec_me">
+		<div class="inner_wrap clearfix">
+			<h2>기본정보 입력란</h2>
+			<hr  color="#333333">
+			<div class="info clearfix">
+				<form action="form.jsp" method="post">
+					<p class="name">이름 :  <input id="user_name" name="user_name" type="text" minlength="2" maxlength="5" size="30"/>
+					</p>
+					<p class="tell">전화번호 :  <input id="user_tell" name="user_tell" type="text" minlength="2" maxlength="20" size="30"/>
+					</p>
+				</form>
+			</div>
+			<hr width = ""color = "#333333" size="0.5px" >
+			<div class="info_01">
+				<form action="form.jsp" method="post">
+					<p class="email">E-mail :  <input  id="user_email" name="user_email" type="text" minlength="2" maxlength="20" size="40"/>
+					</p>
+				</form>
+			</div>
+			<div class="info_02 clearfix">
+				<form action="form.jsp" method="post">
+					<p class="email">
+						@ <input  id="user_site" name="user_site" type="text" minlength="2" maxlength="20" size="40"/>
+						<span>
+							<select name="email" id="email">
+								<option value="">직접입력</option>
+								<option value="naver.com">naver.com</option>
+								<option value="gmail.com">gmail.com</option>
+								<option value="nate.com">nate.com</option>
+								<option value="yahoo.co.kr">yahoo.co.kr</option>
+								<option value="hanmail.net">hanmail.net</option>
+								<option value="daum.net">daum.net</option>
+								<option value="dreamwiz.com">dreamwiz.com</option>
+								<option value="lycos.co.kr">lycos.co.kr</option>
+								<option value="empas.com">empas.com</option>
+								<option value="korea.com">korea.com</option>
+								<option value="paran.com">paran.com</option>
+								<option value="freechal.com">freechal.com</option>
+								<option value="hanmir.co.kr">hanmir.co.kr</option>
+								<option value="hotmail.com">hotmail.com</option>
+							</select>
+						</span>
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="sec_qa">
+		<div class="inner_wrap">
+			<h2>문의내용</h2>
+			<hr color="#333333">
+			<div class="info">
+				<form action="form.jsp" method="post">
+					<p class="name left">제목 :  <input id="user_name" name="user_name" type="text" minlength="2" maxlength="20" size="40"/>
+					</p>
+				</form>
+			</div>
+			<hr width = ""color = "#333333" size="0.5px" >
+			<div class="info_01">
+				<form action="form.jsp" method="post">
+					<p class="txt">내용 :  <textarea></textarea>
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="sec_btn">
+		<div class="inner_wrap">
+			<div class="info_03">
+				<a class="view bdr_act bdr3" href="#">제출하기</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="inner_wrap">
+			<div class="logo">
+				<img src="images/img_logo_white.png" alt="PURADACK logo"/>
+			</div>
+			<div class="info">
+				<ul class="f_menu clearfix">
+					<li><a href="#"><strong>개인정보 취급방침</strong></a></li><!--
+					--><li><a href="#">이용약관</a></li>
+					<li><a href="#">회사소개</a></li>
+				</ul>
+				<p>
+				<span>주식회사 IDUS KOREA</span> <span>대표 : 장성식</span> <span class="m_br">사업자등록번호 : 112-88-00179</span> <br class="m_none"><span>서울특별시 강서구 양천로 31길 푸른빌딩 3층</span> <br><span>TEL :02-323-9001~2</span> <span>FAX : 02-323-9003</span> <br><span>COPYRIGHT IDUS KOREA ALL RIGHTS RESERVED</span>
+				</p>
+			</div>
+			<div class="social">
+					<a href="#">facebook</a><!--
+				 --><a href="#">instargram</a><!--
+				 --><a href="#">youtube</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

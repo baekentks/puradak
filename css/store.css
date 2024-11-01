@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*++++++++++ Media Query +++++++++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	section.sec_visual > h2.sub_title { background: url("../images/bg_store.jpg") no-repeat center center; }
+	
+	/****** 검색창 *******/
+	section.sec_search > div.search { margin-top: 40px; text-align: center; }
+	section.sec_search > div.search > input { width: 55%; height: 40px; }
+
+	/****** 지도  *******/
+	section.sec_map { width: 100%; max-width: 767px; }
+	section.sec_map > iframe { width: 100%!important; margin-top: 40px; }
+
+	/****** 테이블  *******/
+	section.sec_nots { width: 100%; margin: 40px 0 40px 0; }
+	section.sec_nots > table { width: 100%;}
+	section.sec_nots > table > thead { display: none;}
+	section.sec_nots > table > tbody > tr { display: block; width: 100%; border-bottom: 1px solid #ccc; padding-top: 15px; font-size: 0.9375em ;}
+	section.sec_nots > table > tbody > tr.tr_01 { border-top: 3px solid #333; border-bottom: 1px solid #ccc; }
+	section.sec_nots > table > tbody > tr > td.td_01 { display: inline-block; width: 50%; height: 35px; }
+	section.sec_nots > table > tbody > tr > td.td_02 { display: inline-block; width: 50%; height: 35px; }
+	section.sec_nots > table > tbody > tr > td.td_03 { display: block; width: 100%; height: 35px; }
+	section.sec_nots > table > tbody > tr > td.td_03 > a { font-size: 0.875em; }
+	section.sec_nots > table > tbody > tr > td { vertical-align: middle; text-align: center;}
+
+	/****** 페이지네이션  *******/
+	div.pagination { margin-bottom: 40px; }
+
+
+}
+
+/* -- mobile(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.sec_visual > h2.sub_title { background: url("../images/bg_store.jpg") no-repeat center center; }
+	
+	/****** 검색창 *******/
+	section.sec_search > div.search { margin-top: 60px; text-align: center; }
+	section.sec_search > div.search > input { width: 39.0625%; height: 40px; }
+
+	/****** 지도  *******/
+	section.sec_map { width: 100%; }
+	section.sec_map > iframe { width: 100%!important; margin-top: 60px; }
+
+	/****** 테이블  *******/
+	section.sec_nots { width: 100%; margin: 50px 0 50px 0; }
+	section.sec_nots > table { width: 100%;}
+	section.sec_nots > table > thead > tr { width: 100%; height: 50px; border-top: 3px solid #333; border-bottom: 1px solid #333; font-size: 0.9375em; }
+	section.sec_nots > table > thead > tr > th.th_01 { width: 17.96875%; vertical-align: middle; }
+	section.sec_nots > table > thead > tr > th.th_02 { width: 33.03125%; vertical-align: middle; }
+	section.sec_nots > table > thead > tr > th.th_03 { width: 49%; vertical-align: middle; }
+	section.sec_nots > table > tbody > tr { width: 100%; height: 50px; border-bottom: 1px solid #ccc; font-size: 0.9375em;}
+	section.sec_nots > table > tbody > tr > td { vertical-align: middle; text-align: center;}
+	section.sec_nots > table > tbody > tr > td:last-child { padding-left: 3.5%; text-align: left; }
+	section.sec_nots > table > tbody > tr > td > a { display: block; width: 100%; height: 100%; }
+	section.sec_nots > table > tbody > tr:active > td > a { color: d4af37; }
+
+	/****** 페이지네이션  *******/
+	div.pagination { margin-bottom: 60px; }
+
+}
+/* -- tablet(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+	
+	div.wrapper_01 { width: 100%; max-width: 1100px; margin: 0 auto; }
+	
+	section.sec_visual > h2.sub_title { background: url("../images/bg_store.jpg") no-repeat center center; }
+	
+	/****** 검색창 *******/
+	section.sec_search > div.search { margin-top: 90px; text-align: center; }
+	section.sec_search > div.search > input { width: 36.3636%; height: 40px; }
+
+	/****** 지도  *******/
+	section.sec_map { width: 100%; }
+	section.sec_map > iframe { width: 100%!important; margin-top: 70px; }
+
+	/****** 테이블  *******/
+	section.sec_nots { width: 100%; margin: 100px 0 50px 0; }
+	section.sec_nots > table { width: 100%;}
+	section.sec_nots > table > thead > tr { width: 100%; height: 50px; border-top: 3px solid #333; border-bottom: 1px solid #333; }
+	section.sec_nots > table > thead > tr > th.th_01 { width: 15.4545%; vertical-align: middle; }
+	section.sec_nots > table > thead > tr > th.th_02 { width: 34.5454%; vertical-align: middle; }
+	section.sec_nots > table > thead > tr > th.th_03 { width: 50.00000001%; vertical-align: middle; }
+	section.sec_nots > table > tbody > tr { width: 100%; height: 50px; border-bottom: 1px solid #ccc; }
+	section.sec_nots > table > tbody > tr:hover { cursor:pointer; }
+	section.sec_nots > table > tbody > tr > td { vertical-align: middle; text-align: center;}
+	section.sec_nots > table > tbody > tr > td:last-child { padding-left: 7.2747%; text-align: left; }
+	section.sec_nots > table > tbody > tr:hover > td { color: #d4af37; }
+
+	/****** 페이지네이션  *******/
+	div.pagination { margin-bottom: 90px; }
+
+}
+/* -- desktop(end) -- */

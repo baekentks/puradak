@@ -1,0 +1,176 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*++++++++  Media Query  ++++++++*/
+/*------- Mobile(start)  -----*/
+@media screen and (max-width: 767px) {
+
+	
+	* { color: #666; }
+	section.sec_history {  position: relative;  width: 100vw; height: auto;  }
+	section.sec_history > h2.sub_title { margin-bottom: 40px; background: url("../images/bg_brand.jpg")no-repeat center center;  }
+	section.sec_history > img {  display: none; }
+
+	 section.sec_history > ul > li { margin-bottom: 40px; }
+    section.sec_history > ul > li.about_right { margin-left: 20px;}
+	section.sec_history > ul > li.about_left { margin-left: 20px;}
+	section.sec_history > ul > li.about_left p { margin-left: -10px; }
+	section.sec_history > ul > li span.num { font-weight: bold; font-size: 1em; color: #333; }
+	section.sec_history > ul > li.about_right span.num { margin-right: 10px; }
+	section.sec_history > ul > li.about_left span.num { margin-left: 10px;}
+	section.sec_history > ul > li.about_left span.num{ float: left; padding-right: 10px; }
+
+	section.sec_history > ul > li p { font-size: 0.75em; }
+	section.sec_history > ul > li h5 { margin-bottom: 10px; }
+	section.sec_history > ul > li p { margin-bottom: 4px; }
+	section.sec_history > ul > li h5 strong { font-size:1.25em; font-weight: bold; color: #d4af37; font-family: 'NotoSansKR-Medium'; margin-bottom: 100px; }
+
+	
+	
+	section.sec_history > ul > li.history_2018 > p.img_01 > img { display: none; }
+	section.sec_history > ul > li.history_2017 > p.img_02 > img { display: none; }
+
+
+
+
+
+
+
+
+}
+/*------  Mobile(end)  ----*/
+
+/*+++++++++++++++++++++++++++++++*/
+/*-------   Tablet(start)   -----*/
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+
+
+	* { color: #666; }
+	section.sec_history {  position: relative;  width: 100vw; height: auto;  }
+	section.sec_history > h2.sub_title { margin-bottom: 120px; background: url("../images/bg_brand.jpg")no-repeat center center;  }
+	section.sec_history > img {  display: block; width: 165px; height:118px; object-fit: cover; margin: 0 auto; }
+
+	
+	section.sec_history > ul::before { content:""; display: block; position: absolute; left: 50%;  width: 1px; height: 1085px; background: #666;   }
+	section.sec_history > ul > li span.num { font-weight: bold; font-size: 0.875em; color: #333; }
+	section.sec_history > ul > li.about_right span.num { margin-right: 10px; }
+	section.sec_history > ul > li.about_left span.num { margin-left: 10px;}
+
+	section.sec_history > ul > li.about_right {  position: absolute; left: 50%;  padding-left: 18px; }
+	section.sec_history > ul > li.about_left { text-align: right;  width: 50%; padding-right: 18px;  }
+
+	section.sec_history > ul > li p { font-size: 0.875em; }
+	section.sec_history > ul > li h5 { margin-bottom: 10px; }
+	section.sec_history > ul > li p { margin-bottom: 4px; }
+	section.sec_history > ul > li h5 strong { font-size:1.875em; font-weight: bold; color: #d4af37; font-family: 'NotoSansKR-Medium'; margin-bottom: 100px; }
+
+	
+	section.sec_history > ul > li.about_right h5::after { content: ""; display: block; position:absolute; left:-8px;  top: 23px; z-index:2;width:16px; height: 16px;  background: url("../images/img_history_circle.png")no-repeat;  }
+	section.sec_history > ul > li.about_left h5::after { content: ""; display: block; position:absolute; right:-8px;  top: 23px; z-index:2;width:16px; height: 16px;  background: url("../images/img_history_circle.png")no-repeat;  }
+
+	section.sec_history > ul > li.history_2018 > p.img_01 > img { display: block; width:  178px; height: 135px; object-fit: cover; }
+	section.sec_history > ul > li.history_2017 > p.img_02 > img { display: block; width:  153px; height: 152px; object-fit: cover; }
+	section.sec_history > ul > li.history_2018 > p.img_01 { display: inline-block; margin: 20px 0; }
+	section.sec_history > ul > li.history_2017 > p.img_02 { display: inline-block; margin: 20px 0; }
+
+
+	section.sec_history > ul { position: relative; height: 1205px; }
+	section.sec_history > ul > li.history_2019 { position: absolute; margin-top: 60px; }
+	section.sec_history > ul > li.history_2018 { position: absolute;margin-top: 192px; }
+	section.sec_history > ul > li.history_2017 { position: absolute;margin-top: 359px; }
+	section.sec_history > ul > li.history_2016 { position: absolute;margin-top: 594px; }
+	section.sec_history > ul > li.history_2015 { position: absolute;margin-top: 809px; }
+	section.sec_history > ul > li.history_2014 { position: absolute;margin-top: 955px; }
+
+
+
+	
+
+
+
+
+}
+/*---------   Tablet(end)   ----*/
+
+/*++++++++++++++++++++++++++++++++*/
+/*-------   Desktop(start)   -----*/
+@media screen and (min-width: 1025px) {
+
+
+
+
+	* { color: #666; }
+	section.sec_history {  position: relative;  width: 100vw; height: auto;  }
+	section.sec_history > h2.sub_title { margin-bottom: 180px; background: url("../images/bg_brand.jpg")no-repeat center center;  }
+	section.sec_history > img {  display: block; width: 254px; height:172px; object-fit: cover; margin: 0 auto; }
+
+	
+	section.sec_history > ul::before { content:""; display: block; position: absolute; left: 50%;  width: 1px; height: 1373px; background: #666; margin-bottom: 180px;   }
+	section.sec_history > ul > li span.num { font-weight: bold; font-size: 1.125em; color: #333; }
+	section.sec_history > ul > li.about_right span.num { margin-right: 10px; }
+	section.sec_history > ul > li.about_left span.num { margin-left: 10px;}
+
+	section.sec_history > ul > li.about_right {  position: absolute; left: 50%;  padding-left: 118px; }
+	section.sec_history > ul > li.about_left { text-align: right;  width: 50%; padding-right: 118px;  }
+
+	section.sec_history > ul > li p { font-size: 1.125em; }
+	section.sec_history > ul > li h5 { margin-bottom: 10px; }
+	section.sec_history > ul > li p { margin-bottom: 4px; }
+	section.sec_history > ul > li h5 strong { font-size:2.25em; font-weight: bold; color: #d4af37; font-family: 'NotoSansKR-Medium';}
+
+	section.sec_history > ul > li.about_right h5::before { content: '';display: inline-block; position: absolute; left: 0px; top: 31px;z-index:1; width: 68px; height: 1px;  background: #666;} 
+	section.sec_history > ul > li.about_left h5::before  { content: '';display: inline-block; position: absolute; right: 0px; top: 31px;   z-index:1; width: 68px; height: 1px;  background: #666;  } 
+	section.sec_history > ul > li.about_right h5::after { content: ""; display: block; position:absolute; left:-8px;  top: 23px; z-index:2;width:16px; height: 16px;  background: url("../images/img_history_circle.png")no-repeat;  }
+	section.sec_history > ul > li.about_left h5::after { content: ""; display: block; position:absolute; right:-8px;  top: 23px; z-index:2;width:16px; height: 16px;  background: url("../images/img_history_circle.png")no-repeat;  }
+
+	section.sec_history > ul > li.history_2018 > p.img_01 > img { display: block; width:  237px; height: 180px; object-fit: cover; }
+	section.sec_history > ul > li.history_2017 > p.img_02 > img { display: block; width:  190px; height: 187px; object-fit: cover; }
+	section.sec_history > ul > li.history_2018 > p.img_01 { display: inline-block; margin: 40px 0; }
+	section.sec_history > ul > li.history_2017 > p.img_02 { display: inline-block; margin: 40px 0; }
+	
+
+	section.sec_history > ul { position: relative; height: 1493px; }
+	section.sec_history > ul > li.history_2019 { position: absolute; margin-top: 90px; }
+	section.sec_history > ul > li.history_2018 { position: absolute;margin-top: 180px; }
+	section.sec_history > ul > li.history_2017 { position: absolute;margin-top: 440px; }
+	section.sec_history > ul > li.history_2016 { position: absolute;margin-top: 734px; }
+	section.sec_history > ul > li.history_2015 { position: absolute;margin-top: 988px; }
+	section.sec_history > ul > li.history_2014 { position: absolute;margin-top: 1213px; }
+
+
+
+	
+	
+	
+	
+
+	
+	
+	
+
+
+
+
+		
+	
+
+
+	
+
+
+
+
+
+
+	
+
+
+	
+	
+
+
+	
+
+	
+}
+/*--------   Desktop(end)   -----*/

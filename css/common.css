@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/*++++++++++ Media Query +++++++++++*/
+
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	div.inner_wrap { width: 100%; max-width: 1100px; margin: 0 auto; }
+	h2 { margin-bottom: 40px; font-size: 1.6875em; color: #333; text-align: center; }
+
+	/* 세부페이지 상단 - 들어가야 하는 이미지만 각자의 css에서 background로 설정! */
+	h2.sub_title { width: 100%; height: 140px; margin: 50px 0 0 0; padding-top: 55px; font-size: 1.25em; color: #fff; background-size: cover; }
+
+	/* search - input의 width, heigth값만 각자의 css파일에서 설정! */
+	input[type="search"] { display: inline-block; margin-right: 10px; padding: 5px 10px; border: 1px solid #333; font-size: 0.938rem; color: #333; }
+	input[type="search"]::placeholder { font-size: 0.938rem; color: #666; }
+	button.btn_search { width: 28px; height: 28px; background: url("../images/icon.png") no-repeat center center; background-position: -112px 0; background-size: cover; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+	/* pagination - 각자 css에서 수정할 필요 없음 */
+	div.pagination { text-align: center; }
+	div.pagination > a { display: inline-block; width: 25px; height: 25px; margin: 0 2px; font-size: 0.875em; line-height: 25px; color: #666; }
+	div.pagination > a.active { background: #666; color: #fff; }
+	div.pagination > a.m_none { display: none; }
+
+	/* header */
+	header { position: fixed; left: 0; top: 0; z-index: 90; width: 100%; height: 50px; background: rgba( 35, 35, 35, 1); }
+
+	header > div.inner_wrap { position: relative; height: 50px; }
+	header > div.inner_wrap > h1 { display: block; position: absolute; left: 50%; top: 50%; width: 51px; height: 34px; transform: translate(-50%, -50%); }
+	header > div.inner_wrap > h1 > a { display: block; width: 100%; height: 100%; text-indent: 100%; white-space: nowrap; overflow: hidden; background: url("../images/bg_logo_black.png") no-repeat; background-size: cover; }
+
+	header > div.inner_wrap > nav { overflow-y: scroll; display: block; position: fixed; left: 0; top: 0; z-index: 99; width: 100%; height: 100vh; padding: 15px 15px; background: #232323; transform: translateX(100%); transition: transform 0.3s; }
+	header > div.inner_wrap > nav > div.login { margin-bottom: 12px; font-size: 0.875em; color: #fff; }
+	header > div.inner_wrap > nav > div.login > a { margin: 0 20px; color: #fff; }
+	header > div.inner_wrap > nav > div.login > a:nth-child(1) { margin-left: 0; color: #fff; }
+	header > div.inner_wrap > nav > div.social { text-align: left; }
+	header > div.inner_wrap > nav > div.social > a { display: inline-block; width: 27px; height: 27px; margin-right: 5px; background: url("../images/ico_sns.png") no-repeat; background-size: 81px 54px; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	header > div.inner_wrap > nav > div.social > a:nth-child(1) { background-position: 0 0;  }
+	header > div.inner_wrap > nav > div.social > a:nth-child(2) { background-position: -27px 0;  }
+	header > div.inner_wrap > nav > div.social > a:nth-child(3) { background-position: -54px 0;  }
+	header > div.inner_wrap > nav > ul { clear: both; }
+	header > div.inner_wrap > nav > ul > li > a { display: block; position: relative; padding: 15px 0;  font-size: 1.125em; line-height: 25px; color: #fff; }
+	header > div.inner_wrap > nav > ul > li > a.active  {  border-bottom: 1px solid #d4af37; color: #d4af37; }
+
+	header > div.inner_wrap > nav > ul > li > ul { display: none; }
+	header > div.inner_wrap > nav > ul > li.active > ul { display: block; }
+	header > div.inner_wrap > nav > ul > li > ul > li { padding: 10px 0 10px 20px; }
+	header > div.inner_wrap > nav > ul > li > ul > li > a { display: block; width: 100%; padding: 5px 0px; font-size: 0.875em; color: #999; }
+
+	header > div.inner_wrap > button.btn_back { display: block; position: absolute; left: 10px; top: 16px; width: 18px; height: 18px; background: url("../images/icon.png") no-repeat -36px center; background-size: cover; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	header > div.inner_wrap > button.btn_menu_toggle { display: block; position: absolute; right: 10px; top: 16px; z-index: 100; width: 18px; height: 18px; background: url("../images/icon.png") no-repeat 0px center; background-size: cover; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	header > div.inner_wrap > button.off { background-position: -18px center; }
+
+	/* footer */
+	footer { background: #232323; }
+	footer > div.inner_wrap { padding: 30px 10px; }
+	footer > div.inner_wrap > div.logo { display: none; }
+	footer > div.inner_wrap > div.info { display: block; width: 100%; color: #fff; }
+	footer > div.inner_wrap > div.info > ul.f_menu { margin-bottom: 20px; text-align: center; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li { display: inline-block; margin: 0px 10px; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li > a { font-family: ""; font-weight: bold; font-size: 0.75em; color: #fff; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li > a > strong { color: #d4af37; }
+	footer > div.inner_wrap > div.info > p { width: 100%; font-size: 0.75em; text-align: center; line-height: 1.4; }
+	footer > div.inner_wrap > div.info > p > span { margin: 0 10px; }
+	footer > div.inner_wrap > div.info > p > span.m_br { display: block; }
+	footer > div.inner_wrap > div.info > p > br.m_none { display: none; }
+
+	footer > div.inner_wrap > div.social { display: none; }
+
+}
+/* -- mobile(end) -- */
+
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	
+	/* common */
+	div.inner_wrap { width: 100%; max-width: 1100px; margin: 0 auto; }
+	h2 { margin-bottom: 60px; font-size: 1.875em; color: #333; text-align: center; }
+	h2.sub_title { width: 100%; height: 270px; margin: 80px 0 0 0; padding-top: 100px; font-size: 2.25em; color: #fff; background-size: cover; }
+
+	/* search */
+	input[type="search"] { display: inline-block; margin-right: 10px; padding: 5px 10px; border: 1px solid #333; font-size: 0.938rem; color: #333; }
+	input[type="search"]::placeholder { font-size: 0.938rem; color: #666; }
+	button.btn_search { width: 32px; height: 32px; background: url("../images/icon.png") no-repeat center center; background-position: -128px 0; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+	/* pagination */
+	div.pagination { text-align: center; }
+	div.pagination > a { display: inline-block; width: 25px; height: 25px; margin: 0 2px; font-size: 0.875em; line-height: 25px; color: #666; }
+	div.pagination > a.active { background: #666; color: #fff; }
+
+	/* header */
+	header { position: fixed; left: 0; top: 0; z-index: 90; width: 100%; height: 80px; background: rgba( 35, 35, 35, 1); }
+
+	header > div.inner_wrap { position: relative; height: 80px; }
+	header > div.inner_wrap > h1 { display: block; position: absolute; left: 50%; top: 50%; width: 95px; height: 65px; transform: translate(-50%, -50%); }
+	header > div.inner_wrap > h1 > a { display: block; width: 100%; height: 100%; text-indent: 100%; white-space: nowrap; overflow: hidden; background: url("../images/bg_logo_black.png") no-repeat; background-size: cover; }
+
+	header > div.inner_wrap > nav { overflow-y: scroll; display: block; position: fixed; left: 0; top: 0; z-index: 99; width: 100%; height: 100vh; padding: 40px; background: #232323; transform: translateX(100%); transition: transform 0.3s; }
+	header > div.inner_wrap > nav > div.login { float: left; margin-top: 4px; font-size: 0.9375em; color: #fff; }
+	header > div.inner_wrap > nav > div.login > a { margin: 0 20px; color: #fff; }
+	header > div.inner_wrap > nav > div.login > a:nth-child(1) { margin-left: 0; color: #fff; }
+	header > div.inner_wrap > nav > div.social { float: left; vertical-align: middle;  text-align: right; }
+	header > div.inner_wrap > nav > div.social > a { display: inline-block; width: 32px; height: 32px; margin-left: 10px; background: url("../images/ico_sns.png") no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	header > div.inner_wrap > nav > div.social > a:nth-child(1) { background-position: 0 0;  }
+	header > div.inner_wrap > nav > div.social > a:nth-child(2) { background-position: -32px 0;  }
+	header > div.inner_wrap > nav > div.social > a:nth-child(3) { background-position: -64px 0;  }
+	header > div.inner_wrap > nav > ul { clear: both; }
+	header > div.inner_wrap > nav > ul > li > a { display: block; position: relative; padding: 20px 0;  font-size: 1.25em; line-height: 35px; color: #fff; }
+	header > div.inner_wrap > nav > ul > li > a.active {  border-bottom: 1px solid #d4af37; color: #d4af37; }
+
+	header > div.inner_wrap > nav > ul > li > ul { display: none; }
+	header > div.inner_wrap > nav > ul > li.active > ul { display: block; }
+	header > div.inner_wrap > nav > ul > li > ul > li { padding: 10px 0 10px 20px; }
+	header > div.inner_wrap > nav > ul > li > ul > li > a { display: block; width: 100%; padding: 10px 0px; font-size: 0.845em; color: #999; }
+
+	header > div.inner_wrap > button.btn_back { overflow: hidden; display: block; position: absolute; left: 20px; top: 24px; width: 32px; height: 32px; background: url("../images/icon.png") no-repeat -64px center; text-indent: 100%; white-space: nowrap; }
+	header > div.inner_wrap > button.btn_menu_toggle { overflow: hidden; display: block; position: absolute; right: 20px; top: 24px; z-index: 100; width: 32px; height: 32px; background: url("../images/icon.png") no-repeat 0px center; text-indent: 100%; white-space: nowrap; }
+	header > div.inner_wrap > button.off { background-position: 0px center; }
+	header > div.inner_wrap > button.on { background-position: -32px center; }
+
+	/* footer */
+	footer { background: #232323; }
+	footer > div.inner_wrap { display: table; padding: 60px 45px;  }
+	footer > div.inner_wrap > div.logo { display: table-cell; width: 25.4101%; text-align: center; vertical-align: middle; }
+	footer > div.inner_wrap > div.logo > img { width: 118px; }
+	footer > div.inner_wrap > div.info { display: table-cell; width: 74.5899; vertical-align: middle; color: #fff; }
+	footer > div.inner_wrap > div.info > ul.f_menu { margin-bottom: 20px; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li { float: left; margin-right: 40px; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li:last-child { margin-right: 0; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li > a { color: #fff; }
+
+	footer > div.inner_wrap > div.info > p { font-size: 0.875em; line-height: 1.4; }
+	footer > div.inner_wrap > div.info > p > span { margin-right: 30px; }
+
+	footer > div.inner_wrap > div.social { display: none; }
+	
+
+}
+/* -- tablet(end) -- */
+
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+	/* common */
+	div.inner_wrap { width: 100%; max-width: 1100px; margin: 0 auto; }
+	h2 { margin-bottom: 90px; font-size: 2.25em; color: #333; text-align: center; }
+	h2.sub_title { width: 100%; height: 340px; margin-bottom: 0; padding-top: 175px; font-size: 2.5em; color: #fff; background-size: cover; }
+
+	/* bdr_act */
+	a.bdr_act::before, a.bdr_act::after { content: ""; position: absolute; width: 0; height: 0; }
+	a.bdr_act[class~="bdr3"]::before, a.bdr_act[class~="bdr3"]::after { border: 3px solid transparent; }
+	a.bdr_act[class~="bdr2"]::before, a.bdr_act[class~="bdr2"]::after { border: 2px solid transparent; }
+	a.bdr_act[class~="bdr1"]::before, a.bdr_act[class~="bdr1"]::after { border: 1px solid transparent; }
+	a.bdr_act::before { top: 0; left: 0; }
+	a.bdr_act::after { bottom: 0; right: 0; }
+	a.bdr_act:hover::before { border-top-color: #d4af37; border-right-color: #d4af37; width: 100%; height: 100%; background: transparent; transition: width 0.2s ease-out, height 0.2s ease-out 0.2s; }
+	a.bdr_act:hover::after { border-bottom-color: #d4af37; border-left-color: #d4af37; width: 100%; height: 100%; background: transparent; transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s; }
+
+	/* search */
+	input[type="search"] { display: inline-block; margin-right: 10px; padding: 5px 10px; border: 1px solid #333; font-size: 1rem; color: #333; }
+	input[type="search"]::placeholder { font-size: 1rem; color: #666; }
+	button.btn_search { width: 32px; height: 32px; background: url("../images/icon.png") no-repeat center center; background-position: -128px 0; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+	/* pagination */
+	div.pagination { text-align: center; }
+	div.pagination > a { display: inline-block; width: 30px; height: 30px; margin: 0 3px; line-height: 30px; color: #666; }
+	div.pagination > a:hover { background: #666; color: #fff; }
+	div.pagination > a.active { background: #666; color: #fff; }
+
+	/* header */
+	header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 90; width: 100%; height: 110px; transition: all 0.3s; }
+	header.add_bg { background: rgba(35, 35, 35, 0.9); }
+	header.on { height: 275px; background: rgba(35, 35, 35, 0.9); }
+
+	header > div.inner_wrap { position: relative; height: 110px; }
+	header > div.inner_wrap > h1 { display: block; position: absolute; left: 20px; top: 12px; width: 127px; height: 86px; }
+	header > div.inner_wrap > h1 > a { display: block; width: 100%; height: 100%; text-indent: 100%; white-space: nowrap; overflow: hidden; background: url("../images/bg_logo_black.png") no-repeat; background-size: cover; }
+
+	header > div.inner_wrap > nav { float: right; margin-top: 55px; padding-bottom: 15px; }
+	header > div.inner_wrap > nav > div.login { position: absolute; right: 0; top: 20px; font-size: 0.9375em; color: #fff; }
+	header > div.inner_wrap > nav > div.login > a { margin: 0 20px; color: #fff; }
+	header > div.inner_wrap > nav > div.login > a:hover { color: #d4af37; }
+	header > div.inner_wrap > nav > div.social { display: none; }
+	header > div.inner_wrap > nav > ul > li { float: left; }
+	header > div.inner_wrap > nav > ul > li > a { display: inline-block; position: relative; height: 35px; margin: 0 30px 10px 30px; font-size: 1.25em; line-height: 35px; color: #fff; }
+	header > div.inner_wrap > nav > ul > li > a::after { content: ""; display: block; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px; background: #d4af37; transform: translateX(-50%); }
+	header > div.inner_wrap > nav > ul > li:hover > a::after { width: 100%; transition: all 0.2s ease-out; }
+	header > div.inner_wrap > nav > ul > li:last-child > a { margin-right: 20px; }
+	
+
+	header > div.inner_wrap > nav > ul > li > ul { display: block; }
+	header > div.inner_wrap > nav > ul > li > ul > li > a { display: block; width: 100%; padding: 10px 0; font-size: 0.845em; text-align: center; color: #999; }
+	header > div.inner_wrap > nav > ul > li > ul > li > a:hover { color: #d4af37; }
+	header > div.inner_wrap > button.btn_back { display: none; }
+	header > div.inner_wrap > button.btn_menu_toggle { display: none; }
+
+	/* footer */
+	footer { background: #232323; }
+	footer > div.inner_wrap { padding: 60px 20px; }
+	footer > div.inner_wrap > div.logo { display: table-cell; width: 160px; vertical-align: middle; }
+	footer > div.inner_wrap > div.logo > img { width: 118px; }
+	footer > div.inner_wrap > div.info { display: table-cell; width: 770px; vertical-align: middle; color: #fff; }
+	footer > div.inner_wrap > div.info > ul.f_menu { margin-bottom: 20px; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li { float: left; margin-right: 40px; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li:last-child { margin-right: 0; }
+	footer > div.inner_wrap > div.info > ul.f_menu > li > a { color: #fff; }
+
+	footer > div.inner_wrap > div.info > p { font-size: 0.875em; line-height: 1.4; }
+	footer > div.inner_wrap > div.info > p > span { margin-right: 30px; }
+
+	footer > div.inner_wrap > div.social { display: table-cell; width: 130px; vertical-align: middle;  text-align: right; }
+	footer > div.inner_wrap > div.social > a { display: inline-block; width: 32px; height: 32px; margin-left: 10px; background: url("../images/ico_sns.png") no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+	footer > div.inner_wrap > div.social > a:nth-child(1) { background-position: 0 0;  }
+	footer > div.inner_wrap > div.social > a:nth-child(2) { background-position: -32px 0;  }
+	footer > div.inner_wrap > div.social > a:nth-child(3) { background-position: -64px 0;  }
+	footer > div.inner_wrap > div.social > a:hover:nth-child(1) { background-position: 0 -32px;  }
+	footer > div.inner_wrap > div.social > a:hover:nth-child(2) { background-position: -32px -32px;  }
+	footer > div.inner_wrap > div.social > a:hover:nth-child(3) { background-position: -64px -32px;  }
+
+}
+
+	
+/* -- desktop(end) -- */
